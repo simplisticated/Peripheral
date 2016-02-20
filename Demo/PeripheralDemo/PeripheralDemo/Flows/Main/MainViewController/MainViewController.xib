@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="PeripheralDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="launchAppButton" destination="z6P-gb-fC4" id="KWp-zC-PMn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6P-gb-fC4">
+                    <rect key="frame" x="20" y="275" width="560" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ntN-NJ-1pt"/>
+                    </constraints>
+                    <state key="normal" title="Launch External App"/>
+                    <connections>
+                        <action selector="launchAppButtonTapped:" destination="-1" eventType="touchUpInside" id="9We-Ce-ghy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="z6P-gb-fC4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="92O-yQ-3vL"/>
+                <constraint firstItem="z6P-gb-fC4" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Y0W-hm-Ez5"/>
+                <constraint firstAttribute="trailing" secondItem="z6P-gb-fC4" secondAttribute="trailing" constant="20" id="w7d-t3-XIe"/>
+            </constraints>
+            <point key="canvasLocation" x="347" y="355"/>
+        </view>
+    </objects>
+</document>
