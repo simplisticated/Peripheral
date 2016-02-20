@@ -20,6 +20,27 @@ or
 
 ## Usage
 
+It's incredibly easy to launch apps with `Peripheral`. Just take look at this:
+
+```swift
+/*
+ * Launch Skype
+ */
+
+Peripheral.Skype.launchApp()
+
+
+/*
+ * Launch Twitter
+ */
+
+Peripheral.Twitter.launchApp()
+```
+
+## Note
+
+Don't forget to create `LSApplicationQueriesSchemes` array in `.plist` file and list all application schemes which you are going to use with `Peripheral` library.
+
 ## License
 
 `Laconic` is available under the MIT license. See the `LICENSE` file for more info.
