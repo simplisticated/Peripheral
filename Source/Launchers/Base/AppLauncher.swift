@@ -54,11 +54,11 @@ public class AppLauncher: NSObject {
         return URLString
     }
     
-    public func absoluteURLStringWithParameters(parameters: [String : String]) -> String {
+    /*public func absoluteURLStringWithParameters(parameters: [String : String]) -> String {
         let relativePath = ""
         let resultString = absoluteURLStringWithRelativePath(relativePath)
         return resultString
-    }
+    }*/
     
     public func launchAppWithURLString(URLString: String) -> Bool {
         // Obtain URL
@@ -87,6 +87,12 @@ public class AppLauncher: NSObject {
     
     public func launchApp() -> Bool {
         let absoluteURLString = absoluteURLStringWithRelativePath("")
+        let result = launchAppWithURLString(absoluteURLString)
+        return result
+    }
+    
+    public func launchAppWithRelativePath(relativePath: String) -> Bool {
+        let absoluteURLString = absoluteURLStringWithRelativePath(relativePath)
         let result = launchAppWithURLString(absoluteURLString)
         return result
     }
