@@ -37,9 +37,17 @@ Peripheral.Skype.launchApp()
 Peripheral.Twitter.launchApp()
 ```
 
+## Supported Apps
+
+Here is a list of currently supported apps:
+* Skype
+* Twitter
+
+This list will be constantly expanding.
+
 ## Note
 
-Don't forget to create `LSApplicationQueriesSchemes` array in `.plist` file and list all application schemes which you are going to use with `Peripheral` library.
+If you want to use `Peripheral` on iOS 9 and later versions, don't forget to create `LSApplicationQueriesSchemes` array in `.plist` file and list all application schemes which you are going to use with `Peripheral` library. Details: https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/uid/TP40009250-SW14
 
 ## License
 
