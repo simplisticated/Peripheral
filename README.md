@@ -20,7 +20,7 @@ or
 
 ## Usage
 
-It's incredibly easy to launch apps with `Peripheral`. Just take look at this:
+Launching apps with `Peripheral` is incredibly easy. Just look at this:
 
 ```swift
 /*
@@ -47,8 +47,8 @@ This list will be constantly expanding.
 
 ## Note
 
-If you want to use `Peripheral` on iOS 9 and later versions, don't forget to create `LSApplicationQueriesSchemes` array in `.plist` file and list all application schemes which you are going to use with `Peripheral` library. Details: https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/uid/TP40009250-SW14
+If you are planning to use `Peripheral` on iOS 9 and later versions, don't forget to create `LSApplicationQueriesSchemes` array in `.plist` file and put there all application URL schemes which you are going to use with `Peripheral` framework. Details: https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/uid/TP40009250-SW14
 
 ## License
 
-`Laconic` is available under the MIT license. See the `LICENSE` file for more info.
+`Peripheral` is available under the MIT license. See the `LICENSE` file for more info.
