@@ -89,7 +89,43 @@ class MainViewController: UIViewController {
     // MARK: Actions
     
     @IBAction func launchAppButtonTapped(sender: AnyObject) {
-        SkypeLauncher.launchApp()
+        // Create alert controller
+        
+        let alertController = UIAlertController(title: "Select App to Launch", message: "App will be launched if it's installed on device.", preferredStyle: .ActionSheet)
+        
+        
+        // Add Skype action
+        
+        let alertActionSkype = UIAlertAction(title: "Skype", style: .Default) { (alertAction) -> Void in
+            Peripheral.Skype.launchApp()
+        }
+        
+        alertController.addAction(alertActionSkype)
+        
+        
+        // Add Twitter action
+        
+        Peripheral.Skype.launchApp()
+        
+        let alertActionTwitter = UIAlertAction(title: "Twitter", style: .Default) { (alertAction) -> Void in
+            Peripheral.Twitter.launchApp()
+        }
+        
+        alertController.addAction(alertActionTwitter)
+        
+        
+        // Add cancel action
+        
+        let alertActionCancel = UIAlertAction(title: "Cancel", style: .Cancel) { (alertAction) -> Void in
+        }
+        
+        alertController.addAction(alertActionCancel)
+        
+        
+        // Display alert controller
+        
+        navigationController?.presentViewController(alertController, animated: true, completion: { () -> Void in
+        })
     }
     
     

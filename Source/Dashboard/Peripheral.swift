@@ -1,5 +1,5 @@
 //
-//  SkypeLauncher.swift
+//  Peripheral.swift
 //  Peripheral
 //
 //  Created by Igor Matyushkin on 20.02.16.
@@ -8,30 +8,30 @@
 
 import UIKit
 
-public class SkypeLauncher: AppLauncher {
+public class Peripheral: NSObject {
     
     // MARK: Class variables & properties
     
+    public class var Skype: SkypeLauncher {
+        get {
+            return SkypeLauncher.sharedSkypeLauncher()
+        }
+    }
+    
+    public class var Twitter: TwitterLauncher {
+        get {
+            return TwitterLauncher.sharedTwitterLauncher()
+        }
+    }
+    
     
     // MARK: Public class methods
-    
-    public class func sharedSkypeLauncher() -> SkypeLauncher {
-        struct Singleton {
-            static var skypeLauncher = SkypeLauncher()
-        }
-        
-        return Singleton.skypeLauncher
-    }
     
     
     // MARK: Private class methods
     
     
     // MARK: Initializers
-    
-    override init() {
-        super.init()
-    }
     
     
     // MARK: Deinitializer
@@ -44,10 +44,6 @@ public class SkypeLauncher: AppLauncher {
     
     
     // MARK: Public object methods
-    
-    public override func URLSchemeForApp() -> String {
-        return "skype"
-    }
     
     
     // MARK: Private object methods

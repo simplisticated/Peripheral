@@ -17,6 +17,8 @@
 		69FFDB9F1C782C1500BCC39B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FFDB9D1C782C1500BCC39B /* MainViewController.swift */; };
 		69FFDBA01C782C1500BCC39B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FFDB9E1C782C1500BCC39B /* MainViewController.xib */; };
 		69FFDBA61C782DF100BCC39B /* StandardNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FFDBA51C782DF100BCC39B /* StandardNavigationController.swift */; };
+		69FFDBA91C7832A400BCC39B /* Peripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FFDBA81C7832A400BCC39B /* Peripheral.swift */; };
+		69FFDBAC1C7834CC00BCC39B /* TwitterLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FFDBAB1C7834CC00BCC39B /* TwitterLauncher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		69FFDB9D1C782C1500BCC39B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		69FFDB9E1C782C1500BCC39B /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		69FFDBA51C782DF100BCC39B /* StandardNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardNavigationController.swift; sourceTree = "<group>"; };
+		69FFDBA81C7832A400BCC39B /* Peripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Peripheral.swift; sourceTree = "<group>"; };
+		69FFDBAB1C7834CC00BCC39B /* TwitterLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterLauncher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,7 @@
 		69FFDB951C7825F200BCC39B /* Peripheral */ = {
 			isa = PBXGroup;
 			children = (
+				69FFDBA71C78328C00BCC39B /* Dashboard */,
 				69FFDB961C78269900BCC39B /* Launchers */,
 			);
 			name = Peripheral;
@@ -179,6 +184,7 @@
 			children = (
 				69FFDB971C78269900BCC39B /* Base */,
 				69FFDB981C78269900BCC39B /* Skype */,
+				69FFDBAA1C7834C100BCC39B /* Twitter */,
 			);
 			path = Launchers;
 			sourceTree = "<group>";
@@ -229,6 +235,22 @@
 				69FFDBA51C782DF100BCC39B /* StandardNavigationController.swift */,
 			);
 			path = Standard;
+			sourceTree = "<group>";
+		};
+		69FFDBA71C78328C00BCC39B /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				69FFDBA81C7832A400BCC39B /* Peripheral.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		69FFDBAA1C7834C100BCC39B /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				69FFDBAB1C7834CC00BCC39B /* TwitterLauncher.swift */,
+			);
+			path = Twitter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,7 +385,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				69FFDB9A1C7826CC00BCC39B /* AppLauncher.swift in Sources */,
+				69FFDBAC1C7834CC00BCC39B /* TwitterLauncher.swift in Sources */,
 				69FFDB631C78258C00BCC39B /* AppDelegate.swift in Sources */,
+				69FFDBA91C7832A400BCC39B /* Peripheral.swift in Sources */,
 				69FFDB9C1C7826E300BCC39B /* SkypeLauncher.swift in Sources */,
 				69FFDBA61C782DF100BCC39B /* StandardNavigationController.swift in Sources */,
 				69FFDB9F1C782C1500BCC39B /* MainViewController.swift in Sources */,

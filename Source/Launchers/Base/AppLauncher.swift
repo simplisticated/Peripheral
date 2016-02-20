@@ -15,6 +15,28 @@ public class AppLauncher: NSObject {
     
     // MARK: Public class methods
     
+    
+    // MARK: Private class methods
+    
+    
+    // MARK: Initializers
+    
+    override init() {
+        super.init()
+    }
+    
+    
+    // MARK: Deinitializer
+    
+    deinit {
+    }
+    
+    
+    // MARK: Object variables & properties
+    
+    
+    // MARK: Public object methods
+    
     /**
     - returns: URL scheme for supported app.
     
@@ -22,23 +44,23 @@ public class AppLauncher: NSObject {
     
     Example: "skype", "facebook", etc.
     */
-    public class func URLSchemeForApp() -> String {
+    public func URLSchemeForApp() -> String {
         assertionFailure("This method should be overriden in subclass")
         return ""
     }
     
-    public class func absoluteURLStringWithRelativePath(relativePath: String) -> String {
+    public func absoluteURLStringWithRelativePath(relativePath: String) -> String {
         let URLString = String(format: "%@://%@", arguments: [URLSchemeForApp(), relativePath])
         return URLString
     }
     
-    public class func absoluteURLStringWithParameters(parameters: [String : String]) -> String {
+    public func absoluteURLStringWithParameters(parameters: [String : String]) -> String {
         let relativePath = ""
         let resultString = absoluteURLStringWithRelativePath(relativePath)
         return resultString
     }
     
-    public class func launchAppWithURLString(URLString: String) -> Bool {
+    public func launchAppWithURLString(URLString: String) -> Bool {
         // Obtain URL
         
         let URL = NSURL(string: URLString)
@@ -63,29 +85,11 @@ public class AppLauncher: NSObject {
         }
     }
     
-    public class func launchApp() -> Bool {
+    public func launchApp() -> Bool {
         let absoluteURLString = absoluteURLStringWithRelativePath("")
         let result = launchAppWithURLString(absoluteURLString)
         return result
     }
-    
-    
-    // MARK: Private class methods
-    
-    
-    // MARK: Initializers
-    
-    
-    // MARK: Deinitializer
-    
-    deinit {
-    }
-    
-    
-    // MARK: Object variables & properties
-    
-    
-    // MARK: Public object methods
     
     
     // MARK: Private object methods
