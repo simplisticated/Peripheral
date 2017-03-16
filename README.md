@@ -5,7 +5,7 @@
 # Peripheral
 The way to launch apps on iOS.
 
-##How To Get Started
+## How To Get Started
 
 - Copy content of `Source` folder to your project.
 
